@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faTrash } from '@fortawesome/free-solid-svg-icons';
 import genKey from '../../../utils/genKey';
+import config from '../../../utils/config';
 
 class FileViewer extends Component {
   state = {
@@ -83,7 +84,7 @@ class FileViewer extends Component {
                     <div className="player-container" key={genKey(f.filename, i)}>
                       <label>{f.filename}</label>
                       <ReactPlayer
-                        url={`http://localhost:4000/files/download/${f._id}`}
+                        url={`${config.API_URL}/files/download/${f._id}`}
                         controls
                         height="30px"
                         width="100%"

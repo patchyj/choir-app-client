@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Login.scss';
 import axios from 'axios';
 import TextInput from '../Shared/TextInput';
+import config from '../../../utils/config';
 
 export default props => {
   const [username, setUsername] = useState('');
@@ -16,7 +17,7 @@ export default props => {
     };
 
     try {
-      const response = await axios.post('/users/login', postData);
+      const response = await axios.post(`${config.API_URL}/users/login`, postData);
       if (response.status === 200) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.user._id);

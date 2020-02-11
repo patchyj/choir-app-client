@@ -40,7 +40,7 @@ const Landing = props => {
                     <div className="player-container" key={genKey(f.filename, i)}>
                       <label>{f.filename}</label>
                       <ReactPlayer
-                        url={`http://localhost:4000/files/download/${f._id}`}
+                        url={`${config.API_URL}/files/download/${f._id}`}
                         controls
                         height="30px"
                         width="100%"

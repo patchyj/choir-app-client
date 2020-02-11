@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SignUp.scss';
 import axios from 'axios';
 import TextInput from '../Shared/TextInput';
+import config from '../../../utils/config';
 
 export default props => {
   const [username, setUsername] = useState('');
@@ -20,7 +21,7 @@ export default props => {
     };
 
     try {
-      const response = await axios.post('/users/signup', postData);
+      const response = await axios.post(`${config.API_URL}/users/signup`, postData);
 
       if (response.data.msg === 'Success - user created!') {
         setErrors('Woohoo! user created ^_^');

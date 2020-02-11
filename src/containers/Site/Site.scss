@@ -1,0 +1,18 @@
+video:focus {
+  outline: none;
+}
+
+h3 {
+  text-align: left;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}

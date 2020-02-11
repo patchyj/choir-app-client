@@ -1,0 +1,59 @@
+.login-tbl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  width: 320px;
+  margin: auto;
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .form-label {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .form-controls {
+      //   width: 75%;
+      .form-input {
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid rgb(51, 192, 126);
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 1rem;
+    background: rgb(51, 192, 126);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    box-sizing: border-box;
+
+    &:hover {
+      cursor: pointer;
+      background: rgb(36, 141, 92);
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}

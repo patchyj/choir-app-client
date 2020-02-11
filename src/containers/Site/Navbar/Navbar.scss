@@ -1,0 +1,25 @@
+.navbar {
+  padding: 0.5rem;
+  background: rgb(51, 192, 126);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+  .right a {
+    margin-left: 1rem;
+  }
+}

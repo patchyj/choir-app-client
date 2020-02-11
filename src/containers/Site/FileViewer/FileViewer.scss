@@ -1,0 +1,43 @@
+h3 {
+  text-align: left;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+
+  label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: rgb(36, 141, 92);
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 40%;
+      padding: 8px;
+      background: rgb(51, 192, 126);
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      transition: 0.2s;
+      box-sizing: border-box;
+
+      &:hover {
+        cursor: pointer;
+        background: rgb(36, 141, 92);
+      }
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+}
